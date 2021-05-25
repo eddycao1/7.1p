@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddActivity"
+    tools:context=".MainActivity$AddActivity"
     android:padding="30dp">
 
     <EditText
@@ -21,39 +21,41 @@
 
     <EditText
         android:id="@+id/author_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="8dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="484dp"
         android:ems="10"
         android:hint="Note Detail"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_input2" />
 
     <EditText
         android:id="@+id/pages_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="3dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="468dp"
         android:ems="10"
         android:hint="Date"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/author_input2" />
+        app:layout_constraintTop_toBottomOf="@+id/title_input2" />
 
     <Button
         android:id="@+id/update_button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="101dp"
         android:text="Update"
-        android:textSize="20sp"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pages_input2" />
+        app:layout_constraintTop_toBottomOf="@+id/title_input2" />
 
     <Button
         android:id="@+id/delete_button"

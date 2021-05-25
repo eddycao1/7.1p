@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
-    tools:context=".AddActivity">
+    tools:context=".MainActivity$AddActivity">
 
     <EditText
         android:id="@+id/title_input"
@@ -21,37 +21,41 @@
 
     <EditText
         android:id="@+id/author_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="2dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="480dp"
         android:ems="10"
         android:hint="Note detail"
         android:inputType="textPersonName"
+        android:text="`"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_input" />
 
     <EditText
         android:id="@+id/pages_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="2dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="480dp"
         android:ems="10"
         android:hint="Date"
         android:inputType="number"
+        android:text="21052021"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/author_input" />
+        app:layout_constraintTop_toBottomOf="@+id/title_input" />
 
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="134dp"
         android:text="Add"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pages_input" />
+        app:layout_constraintTop_toBottomOf="@+id/title_input" />
 </androidx.constraintlayout.widget.ConstraintLayout>
